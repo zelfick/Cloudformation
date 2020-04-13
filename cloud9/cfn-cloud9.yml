@@ -1,0 +1,22 @@
+Type: AWS::Cloud9::EnvironmentEC2
+Properties: 
+  AutomaticStopTimeMinutes: 30
+  Description: Devinstance
+  InstanceType: t2.micro
+  Name: Devinstancejh
+  OwnerArn: arn:aws:iam::379248537218:user/jaherran
+  Repositories: 
+#    - Repository
+# Path to be cloned in the cloud9 environment /home/USER_NAME/environment/REPOSITORY_NAME
+      PathComponent: /s3
+# Origin URL that would be cloned into the ambient https://path/directory/REPOSITORY_NAME
+      RepositoryUrl: String
+#  SubnetId: String
+  Tags: 
+#    - Tag
+    - 
+      Key: "Owner"
+      Value: "Jorge Herran"
+    - 
+      Key: "Organization"
+      Value: "Valorit"
