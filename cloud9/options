@@ -1,0 +1,12 @@
+Type: AWS::Cloud9::EnvironmentEC2
+Properties: 
+  AutomaticStopTimeMinutes: Integer
+  Description: String
+  InstanceType: String
+  Name: String
+  OwnerArn: String
+  Repositories: 
+    - Repository
+  SubnetId: String
+  Tags: 
+    - Tag
