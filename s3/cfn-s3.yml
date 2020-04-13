@@ -1,0 +1,8 @@
+# This template creates a s3 bucket with the desired name and publicread permissions
+
+Resources:
+  MyS3Bucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "cfn-s3-jh"
