@@ -3,7 +3,7 @@ cloudformation templates to do different things
 
 First you need to create a s3 bucket to store the templates for the stacks you want to create
 
-aws s3 mb s3://cfn-$resource-$name
+aws s3 mb s3://cfntemplates-$name
 
 Now you can upload all artifacts to S3:
 

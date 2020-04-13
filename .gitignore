@@ -1,0 +1,6 @@
+$ aws ec2 describe-instances --profile user1
+
+To avoid put profile in evry command set it for the session
+Linux or macOS
+
+$ export AWS_PROFILE=user1
